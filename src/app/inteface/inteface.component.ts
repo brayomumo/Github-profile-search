@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
+import { User } from '../../models/user.model';
 
 @Component({
-  selector: 'app-inteface',
-  templateUrl: './inteface.component.html',
-  styleUrls: ['./inteface.component.css']
+  selector: 'app-user',
+  templateUrl: './user.component.html',
+  styleUrls: ['./user.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class IntefaceComponent implements OnInit {
+export class UserComponent implements OnInit {
 
   constructor() { }
-
+  @Input()
+  user: User;
   ngOnInit() {
   }
 
 }
+
