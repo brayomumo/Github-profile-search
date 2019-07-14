@@ -3,14 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { IntefaceComponent } from './inteface/inteface.component';
+import { InterfaceComponent } from './inteface/inteface.component';
 import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    IntefaceComponent,
+    InterfaceComponent,
     HomeComponent
   ],
   imports: [
