@@ -13,12 +13,12 @@ export class GitServe {
   }
 
   private username: string;
-  private clientid = 'b9df7228b72cb025a0c8';
-  private clientsecret = '734fbd270cd924eda0b1653ae0d154f8ecb139f3';
+  private clientid = '1560ae83c3ec6ed02792';
+  private clientsecret = 'f6eeacbb082b686c6103070652c2db1ae2ac7797';
   constructor(private http: Http) {
     // tslint:disable-next-line: quotemark
     // console.log("Service is now ready!");
-    this.username = 'emmanuelmuchiri';
+    this.username = 'brayomumo';
   }
   getProfileInfo(){
   	return this.http.get("https://api.github.com/users/" + this.username + "?client_id=" + this.clientid + "&client_secret=" + this.clientsecret)
