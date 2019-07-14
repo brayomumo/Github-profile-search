@@ -10,8 +10,7 @@ import { User } from '../models/user.model';
 export class InterfaceComponent implements OnInit {
 
   constructor() { }
-  @Input()
-  user: User;
+  @Input() user: User;
   ngOnInit() {
   }
 
