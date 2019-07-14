@@ -1,9 +1,14 @@
 <div class="container">
+  <br>
+  <div class="Header">
+    <h3>Welcome to Github profile search </h3>
+  </div>
   <form action="" class="search-form">
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search git users with username" [(ngModel)]="username" name="username" (keyup)="findProfile()">
+        <input type="text" class="form-control" placeholder="Enter profile name" [(ngModel)]="username" name="username" (keyup)="findProfile()">
       </div>
     </form>
+    <hr>
     <div *ngIf="profile">
       <div class="row">
         <div class="col-md-4 padd">
@@ -13,10 +18,15 @@
           <img src="{{profile.avatar_url}}" class="img-circle img-responsive" alt="Profile Image"><br><br>
         </div>
         <div class="col-md-8 padd">
+          <div class="card">
+            <div class="card-title">
                 <p> <span class="label label-success">Number Of Repositories :{{profile.public_repos}}</span></p>
 
-                    <h3 class="">Repositories</h3>
-                  <div class="" *ngFor="let repo of repos">
+                <h3 class="">Repositories</h3>
+
+            </div>
+            <div class="card-body">
+                <div class="" *ngFor="let repo of repos">
                     <ul>
                     <li>
 
@@ -28,6 +38,9 @@
                     </li>
                     </ul>
                 </div>
+            </div>
+          </div>
+
           </div>
       </div>
     </div>
