@@ -4,22 +4,25 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InterfaceComponent } from './inteface/inteface.component';
-import { HomeComponent } from './home/home.component';
-import { ReactiveFormsModule } from '@angular/forms';
+// import { HomeComponent } from './home/home.component';
+import { FormsModule } from '@angular/forms';
+import { Http, HttpModule } from '@angular/http';
+import { GitServe } from './git-serv.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     InterfaceComponent,
-    HomeComponent
+    // HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    FormsModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [GitServe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
