@@ -1,8 +1,8 @@
 
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { GithubService } from '../../services/github.service';
-import { User } from '../../models/user.model';
+import { GitService } from '../git-serv.service';
+import { User } from '../models/user.model';
 import { filter, switchMap, debounceTime, catchError } from 'rxjs/operators';
 import { EMPTY } from 'rxjs';
 
@@ -13,7 +13,7 @@ import { EMPTY } from 'rxjs';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private githubService: GithubService) { }
+  constructor(private githubService: GitService) { }
   findControl = new FormControl();
   error: boolean = false;
   user: User = null;
