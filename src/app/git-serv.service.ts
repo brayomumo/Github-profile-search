@@ -14,7 +14,7 @@ export class GitServService {
     console.log('Service is now ready!');
     this.username = 'brayomumo';
    }
-   getProfileInfo(){
+   getProfileInfo() {
     // tslint:disable-next-line: max-line-length
     return this.http.get('https://api.github.com/users/' + this.username + '?client_id=' + this.clientId + '&client_secret' + this.ClientSecret).forEach(res => res.json());
    }
