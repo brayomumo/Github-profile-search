@@ -1,27 +1,31 @@
-# GithubSearch
+# Triangle Tracker
+#### This is an application which determines the type of triangle formed when a user inputs a set of measurements, 1st June,2019
+#### By **Brian Mumo Paul**
+## Description
+This is an application which allows a user to search for a github profilre and displays the searched repositories, image and links to their repositories.
+## Behaviour Driven Development
+When the user enters the user name in the search bar, the program displays the searched github information. In the repository's part there is a link which when clicked it opens the repository on github.<br>
+The user can also click on a link to view the profile oh github<br>
+![screenshot](./src/assets/screenshot.png)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.6.
 
-## Development server
+## Setup/Installation Requirements
+* Open this link on a supported web broser to interract with the application:
+    https://brayomumo.github.io/Github-profile-search
+### To view the source code :
+* install Atom/Visual studio code
+* git init
+* git clone https://github.com/brayomumo/Github-profile-search
+*  Open the folder where the cloned repository is saved 
+* run the command _ngserve_  on your terminal to open the program 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Technologies Used
+* Angular 8 to create the website 
+* Git and Github to store and deploy the program
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Support and contact details
+In case of any questions or any interest, please contact me using any of the following:
+* Email: brayomumo5@gmail.com
+### License
+MIT Lecense Copyright (c) {2019} **Brian Mumo Paul**
+  
