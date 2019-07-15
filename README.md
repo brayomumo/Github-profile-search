@@ -1,5 +1,5 @@
-# Triangle Tracker
-#### This is an application which determines the type of triangle formed when a user inputs a set of measurements, 1st June,2019
+# Github profile-search
+#### This is an application which displays the user profile of the github-user name entered 16 July,2019
 #### By **Brian Mumo Paul**
 ## Description
 This is an application which allows a user to search for a github profilre and displays the searched repositories, image and links to their repositories.
